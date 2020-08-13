@@ -1,0 +1,26 @@
+@import url("");
+/** Media Queries **/
+html {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0 auto;
+}
+
+.banner_main img {
+  max-width: 100%;
+}
+
+.Content_edition {
+  height: 400px;
+  text-align: center;
+}
+
+.Content_edition img {
+  margin: 10%;
+}

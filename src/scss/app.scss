@@ -1,0 +1,27 @@
+
+@import url("");
+@import 'variables';
+@import 'mixins';
+
+html{
+    @include box-sizing(border-box);
+
+}
+*,
+*:after,
+*:before{
+   @include box-sizing(inherit);
+}
+.banner_main{
+    img{
+        max-width: 100%;
+    }
+}
+.Content_edition{
+   height: 400px;
+   text-align: center;
+   img{
+       margin: 10%;
+   }
+}
+
