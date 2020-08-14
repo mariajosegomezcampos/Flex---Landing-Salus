@@ -4,7 +4,7 @@
 
 html{
     @include box-sizing(border-box);
-    font-family: $fuente;
+    font-family: $fuente_italic;
 
 }
 *,
@@ -12,6 +12,50 @@ html{
 *:before{
    @include box-sizing(inherit);
 }
+@font-face {
+    font-family: "Gotham", sans-serif;
+    src: url(../fonts/Gotham/GothamBook.ttf);
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Gotham-Italic", sans-serif;
+    src: url(../fonts/Gotham/GothamBookItalic.ttf);
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Gotham-Italic", sans-serif;
+    src: url(../fonts/Gotham/GothamBookItalic.ttf);
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Gotham-Bold", sans-serif;
+    src: url(../fonts/Gotham/GothamBold.ttf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Gotham-Light";
+    src: url(../fonts/Gotham/GothamLight.ttf);
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Gotham-Light-Italic";
+    src: url(../fonts/Gotham/GothamLightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Gotham-Medium", sans-serif;
+    src: url(../fonts/Gotham/GothamMedium.ttf);
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "Gotham-Medium-Italic";
+    src: url(../fonts/Gotham/GothamMediumItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+  }
 
 .contenedor {
   max-width: 1100px;
@@ -39,10 +83,11 @@ html{
    }
    h1{
        text-transform: uppercase;
-       color: #126abf;
+       font-family: $fuente_bold;
+       color:$color_text_titulo;
        font-size: 1.3rem;
        margin-bottom: 2%;
-       font-family: $fuente;
+    
    }
    p{
        font-size: 1rem;
@@ -52,6 +97,8 @@ html{
    span{
        font-size: 1rem;
        margin: 2%;
+       font-family: $fuente_italic;
+       color:$color_text_titulo;
    }
 }
 .banner_viroblock{
@@ -74,6 +121,7 @@ html{
             padding: 1rem 1rem;
             h2{
                 font-size: 2rem;
+                font-family: $fuente_bold;
             }
             .title_span{
                 font-size: 2rem;
@@ -81,6 +129,7 @@ html{
             }
             p{
                 padding: 10px 5px;
+                font-family: $fuente_italic;
                
             }
            
@@ -136,10 +185,12 @@ html{
 .text_description{
     text-align: center;
     padding: 0 3% 5%;
+  
     
     h2{
         color: $color_text_titulo;
         font-size: 1.8rem;
+       
     }
     span{
         color: $color_text_titulo;
@@ -170,29 +221,26 @@ html{
     width: 55%;
     margin-left: 50%;
 
+
     .icon{
         flex-direction: column;
     }
  
-
-
 }
-   
-
    
     
     .icon{
         text-align: center;
+       
 
     h2{
         margin: 1rem 0 2rem;
         font-size: 18px;
+        font-family: $fuente_italic;
+        font-weight: normal;
         
     }
  
-   
-   
-    
 
     a{
         background-color: #ffffff;
