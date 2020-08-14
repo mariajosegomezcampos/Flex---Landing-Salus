@@ -10,7 +10,7 @@ function css(){
         cascade: false
     }))
     .pipe(sass({
-        outputStyle:'expanded',
+        outputStyle:'compressed'
     }))
     .pipe(gulp.dest('css') );
 }
