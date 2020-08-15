@@ -71,8 +71,16 @@ html{
    width: 60%;
    height: 450px;
    text-align: center;
+   @include telefono() {
+           width: 80%;
+          
+}
    img{
        margin: 3%;
+       @include telefono() {
+        margin: 5%;
+        width: 100%;
+    }
    }
 
    hr{
@@ -92,6 +100,10 @@ html{
    p{
        font-size: 1rem;
        margin: 2%;
+       @include telefono() {
+        line-height: 130%;;
+        font-size: 1rem;
+    }
    }
 
    span{
@@ -99,12 +111,18 @@ html{
        margin: 2%;
        font-family: $fuente_italic;
        color:$color_text_titulo;
+          @include telefono() {
+       font-size: 0.9rem;
+    }
    }
 }
 .banner_viroblock{
     background-image: url(../img/banner_viroblock.png);
     min-height: 230px;
     margin: 2% 0;
+    @include telefono() {
+        margin: 10% 0 0;
+    }
     img{
         max-width: 100%;
     }
@@ -116,6 +134,9 @@ html{
         text-align: left;
         background-color:#000000e3;
         color: $color_text_secundario;
+        @include telefono() {
+            display: none;
+        }
         .container_text{
             margin: 5% 0 0 5%;
             padding: 1rem 1rem;
@@ -143,19 +164,25 @@ html{
 .section_info_iconos{
     background-color: #EDEDED;
     height: 12rem;
+    @include telefono() {
+       height: 550px;
+         }
 }
 .iconos_banner{
    display: grid;
    grid : 100% / 33.3% 33.3% 33.3%;
    height: 150px;
     margin-top: -2%;
-   
     color:$color_text_primario;
+    @include telefono() {
+       grid-template-columns: auto;
+        }
 
     .content_barra{
         display: flex;
         img{
             padding: 10% 0;
+        margin-left: 10%;
         }
         .text_barra{
             width: 50%;
@@ -178,6 +205,11 @@ html{
 
     .separador2{
        margin:5% 0 ;
+       @include telefono() {
+        img{
+            width: 100%;
+        }
+     }
     }
 }  
 
@@ -197,7 +229,8 @@ html{
    
     }
     p{
-        padding: 1%;
+        padding: 2%;
+        line-height: 130%;;
     }
 
 }
@@ -220,6 +253,10 @@ html{
     display: flex;
     width: 55%;
     margin-left: 50%;
+    @include telefono() {
+        flex-direction:column;
+        margin: 0 auto;
+        }
 
 
     .icon{
@@ -238,6 +275,11 @@ html{
         font-size: 18px;
         font-family: $fuente_italic;
         font-weight: normal;
+        @include telefono() {
+            font-family: $fuente_bold;
+            
+            }
+        
         
     }
  
