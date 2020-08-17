@@ -85,7 +85,6 @@ html{
 
    hr{
        width: 20%;
-      
        margin-bottom: 5%;
        border: 1px solid #86aace;
    }
@@ -121,7 +120,7 @@ html{
     min-height: 230px;
     margin: 2% 0;
     @include telefono() {
-        margin: 10% 0 0;
+        margin: 20% 0 0;
     }
     img{
         max-width: 100%;
@@ -185,7 +184,7 @@ html{
         margin-left: 10%;
         }
         .text_barra{
-            width: 50%;
+            width: 60%;
             padding: 10% 0;
             h3{
                 color: black;
@@ -238,7 +237,8 @@ html{
   background-image: url(../img/banner3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 24rem;
+  background-color: #d2dae4;
+  min-height: 25rem;
   color: $color_text_titulo;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -247,6 +247,12 @@ html{
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2%;
+  @include telefono() {
+   min-height: 65rem;
+   background-size: contain;
+  
+
+    }
  
 }
 .container_icon{
@@ -268,6 +274,7 @@ html{
     
     .icon{
         text-align: center;
+        padding: 20% 0;
        
 
     h2{
@@ -277,6 +284,8 @@ html{
         font-weight: normal;
         @include telefono() {
             font-family: $fuente_bold;
+            margin: 1.5rem;
+           
             
             }
         
@@ -291,6 +300,12 @@ html{
         text-decoration: none;
         color: #126abf;
         font-family: "Gotham-Medium", sans-serif;
+        @include telefono() {
+            
+            margin: -2rem 0 2rem;
+            
+            }
+        
     }
     }
     .video{
@@ -304,7 +319,13 @@ html{
 
     .btn{
         margin-top: 22%;
+
+        @include telefono() {
+            
+            margin: 0;
+            
     }
+}
 
 
 
