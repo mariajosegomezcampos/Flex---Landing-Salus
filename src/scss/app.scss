@@ -5,6 +5,7 @@
 html{
     @include box-sizing(border-box);
     font-family: $fuente_italic;
+    background-color: #f2f2f2;
 
 }
 *,
@@ -200,6 +201,7 @@ html{
     .separador1{
         img{
             margin-left: 50%;
+            margin-bottom: 5%;
         }
     }
 
@@ -222,7 +224,7 @@ html{
 .text_description{
     text-align: center;
     padding: 0 3% 5%;
-    color: #323232;
+    color: #373737;
   
     
     h2{
@@ -315,6 +317,7 @@ html{
         text-decoration: none;
         color: #126abf;
         font-family: "Gotham-Medium", sans-serif;
+        text-transform: uppercase;
         @include telefono() {
             
             margin: -2rem 0 2rem;
@@ -341,10 +344,51 @@ html{
             
     }
 }
+.container_details{
+    padding: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    color: #373737;
+    
+    span{
+        font-weight: bold;
+    }
+
+    .text_details{
+        display:flex;
+        margin: 3% 0;
+        img{
+            margin-right: 2%;
+        }
+
+      
+        
+    }
+    
+    a{
+        background-color: #192A38;
+        border-radius: 4px;
+        padding: 0.7rem 3.5rem;
+        text-decoration: none;
+        color: #f2f2f2;
+        font-family: "Gotham-Medium", sans-serif;
+        text-transform: uppercase;
+    }
+}
+.text_details_viro{
+    margin: 5% 0;
+}
+
+
+
+
+
 .container_calidad{
     padding: 2em 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    color: #373737;
     .especificacion_item{
         display: flex;
         flex-direction: column;
