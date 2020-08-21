@@ -216,6 +216,13 @@ html{
 
     .separador3{
         margin-left: 45.5%;
+        @include telefono() {
+            img{
+               width: 100%;
+            }
+         }
+        
+        
     }
 
 }  
@@ -225,6 +232,10 @@ html{
     text-align: center;
     padding: 0 3% 5%;
     color: #373737;
+    @include telefono() {
+     
+       text-align: inherit;
+         }
   
     
     h2{
@@ -279,6 +290,7 @@ html{
     @include telefono() {
         flex-direction:column;
         margin: 0 auto;
+        width: 100%;
         }
 
 
@@ -291,7 +303,7 @@ html{
     
     .icon{
         text-align: center;
-        padding: 20% 0;
+        padding: 15% 0;
        
 
     h2{
@@ -350,6 +362,23 @@ html{
     grid-template-columns: repeat(2, 1fr);
     font-size: 14px;
     color: #373737;
+    img{
+        max-width: 90%;
+    }
+   
+
+
+    @include telefono() {
+        grid-template-columns: 100%;
+        h2{
+            margin: 5% 0 0;
+        }
+
+        p{
+            line-height: 130%;
+        }
+        
+}
     
     span{
         font-weight: bold;
@@ -389,11 +418,20 @@ html{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: #373737;
+    @include telefono() {
+        grid-template-columns: 100%;
+        
+}
     .especificacion_item{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @include telefono() {
+            img{
+                width: 90%;
+            }
+         }
 
         .title_especificacion_item{
             text-align:center ;
