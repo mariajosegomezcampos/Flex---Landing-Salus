@@ -10,13 +10,8 @@
 }
 
 @mixin tablet {
-    @media only screen and (min-width: #{$tablet}) {
+    @media only screen and (min-width: #{$tablet}) and (min-width: #{$desktop})  {
         @content;
     }
 }
   
-@mixin desktop {
-    @media only screen and (min-width: #{$desktop}) {
-        @content;
-    }
-}
