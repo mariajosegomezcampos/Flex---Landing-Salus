@@ -60,7 +60,7 @@ html{
 
 .contenedor {
   max-width: 1200px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 .banner_main{
@@ -117,11 +117,14 @@ html{
     }
    }
 }
+.banner_viroblock_info{
+    background-color: #EDEDED;
+}
 .banner_viroblock{
     background-image: url(../img/banner_viroblock.png);
     background-repeat: no-repeat;
     min-height: 260px;
-    margin: 2% 0;
+    
     @include telefono() {
         margin: 20% 0 0;
     }
@@ -134,7 +137,7 @@ html{
     .text_viroblock{
         width: 46%;
         position: absolute;
-        min-height: 220px;
+        min-height: 235px;
         margin-left: 54%;
         text-align: left;
         background-color:#000000de;
@@ -142,10 +145,7 @@ html{
         @include telefono() {
             display: none;
         }
-        @include tablet() {
-            min-height: 235px;
-         
-        }
+      
         .container_text{
             margin: 5% 0 0 5%;
             padding: 1rem 1rem;
@@ -180,35 +180,45 @@ html{
    
 }
 .section_info_iconos{
-    background-color: #EDEDED;
-    height: 12rem;
+   
+    
     @include telefono() {
-       height: 550px;
+        height: 550px;
+       
          }
 }
 .iconos_banner{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   height: 150px;
-    margin-top: -2%;
-    color:$color_text_primario;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    color: #333;
     @include telefono() {
        grid-template-columns: auto;
         }
 
     .content_barra{
         display: flex;
+        width: 30%;
+        margin: 0 1%;
+    @include telefono() {
+       width: 100%;
+         }
+         @include tablet() {
+            width: 60%;
+              }
+    
         img{
-            padding: 10% 0;
-            margin-left: 10%;
-            @include telefono() {
-               margin: 0;
-                 }
+            padding: 10% 5%;
+           
+           
           
         }
         .text_barra{
-            width: 60%;
-            padding: 10% 0;
+            width: 90%;
+            margin: 6% 0;
+            @include tablet() {
+                margin: 12% 0 0;
+            }
             h3{
                 color: black;
             }
@@ -321,7 +331,9 @@ html{
         }
         @include tablet() {
             width: 100%;
-            margin-left: 35%;
+            margin: 0 auto;
+
+        
             }
 
 
@@ -454,6 +466,7 @@ html{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: #373737;
+    width: 85%;
     @include telefono() {
         grid-template-columns: 100%;
         
@@ -463,16 +476,23 @@ html{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        @include telefono() {
-            img{
-                width: 100%;
-            }
-         }
-        
+      
+        .img_galery{
+            width: 100%;
+            @include tablet() {
+                width: 90%;
+        }
+        }
 
         .title_especificacion_item{
             text-align:center ;
             margin-top: 5%;
+            border-bottom: 1px solid #979797;
+            p{
+                padding: 0 0 1rem;
+                font-weight:bold ;
+                
+            }
          
             h2{
                 font-size: 2rem;
@@ -482,13 +502,11 @@ html{
         }
         span{
         font-weight: bold;
+       
         }
         img{
             margin: 1em 0 0;
-            @include tablet() {
-     
-               width: 90%;
-                  }
+           
           
            
         }
